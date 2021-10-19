@@ -2,6 +2,7 @@
 layout: post
 title:  "¿Qué es Docker?"
 date:   2021-10-18 09:30
+share: true
 categories: [Virtualización,Docker]
 tags: Docker
 ---
