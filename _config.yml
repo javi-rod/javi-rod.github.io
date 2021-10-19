@@ -1,17 +1,17 @@
 # Jekyll configuration
 
-name: Blog Name
+name: Javi Rod IT
 description: Software Developer
 
 # Url is currently only used only for the RSS feed in feed.xml
-url: http://streetturtle.github.io
+url: https://javi-rod.github.io/
 #url: http://localhost:4000
 
 # For a project page here should be a project name. Otherwise (for user's/organization's page leave it empty)
 baseurl: '/jekyll-clean-dark'
 
-author: Pavel Makhov
-copyright: 2015-2018
+author: Javier Rodríguez
+copyright: 2021
 
 share:
   facebook: true
@@ -22,7 +22,8 @@ share:
   email: true
 
 social:
-  github: streetturtle
+  github: javi-rod
+  twitter: rodiglja
   stackoverflow: ''
   linkedin:
   instagram: ''
@@ -30,7 +31,7 @@ social:
   rss: feed.xml
 
 # Google Analytics key, leave blank to ignore
-google_analytics_key:
+google_analytics_key: G-DSRMBGY961
 # Yandex metrica (https://metrica.yandex.com/) leave blank to ignore or put true to use
 yandex_metrica:
 
