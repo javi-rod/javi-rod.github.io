@@ -6,7 +6,7 @@ categories: [Virtualización,Docker]
 tags: Docker
 ---
 
-En el post anterior [¿Qué es docker?](https://javi-rod.github.io/posts/intro-docker/) mencionaba ligeramente Docker Desktop y hoy desearía profundizar algo más en este software que está disponible tanto para Mac como para Windows.
+En el post anterior [¿Qué es docker?](https://javi-rod.github.io/2021/10/intro-docker/) mencionaba ligeramente Docker Desktop y hoy desearía profundizar algo más en este software que está disponible tanto para Mac como para Windows.
 
 Si recordáis, comentaba que en un contenedor de Linux debía correr en un host Linux pero con Docker Desktop, es posible correr un contenedor Linux en Windows.
 
