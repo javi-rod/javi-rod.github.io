@@ -10,13 +10,13 @@ Docker, es una herramienta que nos permite mediante tecnología de contenedores,
 
 Podemos imaginar que ese contenedor de Docker, es como un container de barco como los que vemos en la siguiente imagen
 
-<img src="https://javi-rod.github.io/assets/images/containers.jpg" alt="alt text" />
+<img src="https://javi-rod.github.io/assets/images/20211018/containers.jpg" alt="alt text" />
 
 La aplicación, al estar empaquetada en un contenedor, incluye además del código, sus dependencias, evitando que en un máquina funcione y en otra no. Por ejemplo, supangamos que una aplicación requiere de JAVA 7 pero yo tengo JAVA 6. A mi no me funcionará la aplicación al no tener la JAVA adecuada, esto se evita teniendo la aplicación empaquetada en un contenedor ya que nos permitirá ejecutar la aplicación siempre en el mismo entorno.
 
 Aunque el concepto de contenedores es similar a la virtualización de máquinas tiene sus diferencias.
 
-<img src="https://javi-rod.github.io/assets/images/Docker_VM.png" alt="alt text" />
+<img src="https://javi-rod.github.io/assets/images/20211018/Docker_VM.png" alt="alt text" />
 
 Las máquinas virtuales necesitan de su propio sistema operativo como si se tratase de un equipo físico, además de un hardware virtual (RAM,Disco...) Este hardware es compartido por todas las máquinas virtuales que tengamos en nuestro Host.
 
