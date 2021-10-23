@@ -29,7 +29,7 @@ $USER es un variable que contiene nuestro usuario. Haciendo un eco $USER veremos
 Para comprobar si se hemos agregado al usuario al grupo
 
 ```console
-$ cat /etc/group | grep docker
+$ grep docker /etc/group
 ```
 
 <img src="https://javi-rod.github.io/assets/images/20211023/pic1.png" alt="alt text" />
