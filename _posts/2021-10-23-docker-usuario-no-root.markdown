@@ -10,7 +10,7 @@ En el post anterior instalamos Docker y para probar la correcta instalación lan
 
 El motivo por el cual hicimos uso del comando sudo es el siguiente. El demonio de Docker hace uso de un [socket de Unix](https://es.wikipedia.org/wiki/Socket_Unix) y éste es propiedad del usuario root.
 
-Para usar Docker con un usuario no root, podemos crear un grupo Docker, en caso de no existir ya, y añadir nuestro usuario a este grupo.De esta forma cuando se inicie el demonio de Docker, el socket Unix que se crea es accesible por los usuarios de este grupo.
+Para usar Docker con un usuario no root, podemos crear un grupo docker, en caso de no existir ya, y añadir nuestro usuario a este grupo.De esta forma cuando se inicie el demonio de Docker, el socket Unix que se crea es accesible por los usuarios de este grupo.
 
 Debemos tener en cuenta el riesgo que conlleva la creación de este grupo, ya que tendrá privilegios equivalentes a root.
 
