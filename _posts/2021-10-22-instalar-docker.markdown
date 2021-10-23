@@ -8,7 +8,7 @@ tags: Docker
 
 En el post de hoy, os muestro una guía de instalación de Docker, siguiendo los pasos de la documentación oficial, bajo Ubuntu Server 20.04 recien instalado y sin los paquetes de Docker del repositorio de Ubuntu instalados.
 
-Según la documentación oficial de Docker, lo primero a realizar es la desinstalación de versiones anteriores, este paso, en mi caso al ser instalación limpia lo he obviado. Si vosotros tenéis alguna versión previa debeís lanzar el siguiente comando.
+Según la documentación oficial de Docker, lo primero a realizar es la desinstalación de versiones anteriores, este paso, en mi caso al ser instalación limpia lo he obviado. Si vosotros tenéis alguna versión previa debéis lanzar el siguiente comando.
 
 ```console
 $ sudo apt-get remove docker docker-engine docker.io containerd runc
