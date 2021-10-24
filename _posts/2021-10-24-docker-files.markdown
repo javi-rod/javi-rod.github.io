@@ -2,6 +2,7 @@
 layout: post
 title:  "Dockerfile"
 date:   2021-10-24 09:30
+share: true
 categories: [Virtualización,Docker]
 tags: Docker
 ---
