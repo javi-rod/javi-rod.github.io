@@ -2,6 +2,7 @@
 layout: post
 title:  "Instalación de Docker en Ubuntu Server 20.04"
 date:   2021-10-22 09:30
+share: true
 categories: [Virtualización,Docker]
 tags: Docker
 ---
