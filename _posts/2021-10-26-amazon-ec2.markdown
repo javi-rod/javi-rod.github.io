@@ -3,7 +3,10 @@ layout: post
 title:  "Amazon Elastic Compute Cloud (Amazon EC2)"
 date:   2021-10-26 09:30
 categories: [Cloud,AWS]
-tags: Cloud,AWS,Amazon-EC2
+tags:
+- Cloud
+- AWS
+- Amazon-EC2
 ---
 
 Amazon Elastic Compute Cloud, de ahora en adelante Amazon EC2, nos proporciona capacidad de cómputo segura y de tamaño modificable en la nube como instancias de Amazon EC2.
@@ -30,9 +33,13 @@ Estas instancias proporcionan un equilibrio de recursos informáticos,de memoria
 		
 ### **Instancias optimizadas para computación**
 
-Son ideales para las aplicaciones que dependen de los recursos informáticos y se benefician de los procesadores de alto rendimiento. Al igual que las instancias de uso general, podemos utilizar instancias optimizadas para computación en las cargas de trabajo, como los servidores web, de aplicaciones y de juegos.
+Son ideales para las aplicaciones que dependen de los recursos informáticos y se benefician de los procesadores de alto rendimiento.
 
-A diferencia de las instancias de uso general, las optimizadas para computación son ideales para servidores web de alto rendimiento, los servidores de aplicaciones que necesiten de grandes recursos y los servidores de juegos dedicados. También podemos utilizar estas instancias en las cargas de trabajo de procesamiento por lotes que requieren procesar muchas transacciones en un solo grupo.
+A diferencia de las instancias de uso general, las optimizadas para computación son ideales para:
+- Servidores web de alto rendimiento
+- Servidores de aplicaciones que necesiten de grandes recursos 
+- Servidores de juegos dedicados. 
+- Cargas de trabajo de procesamiento por lotes que requieren procesar muchas transacciones en un solo grupo.
 		
 ### **Instancias optimizadas para memoria**
 
@@ -42,7 +49,9 @@ Están diseñadas para entregar un rendimiento rápido para las cargas de trabaj
 
 Las instancias de informática acelerada utilizan aceleradores de hardware, o coprocesadores, para realizar algunas funciones de manera más eficiente de lo que es posible en el software que se ejecuta en las CPU. 
 		
-Un acelerador de hardware es un componente que puede acelerar el procesamiento de datos. Las instancias de informática acelerada son ideales para las cargas de trabajo, como las aplicaciones de gráficos, el streaming de juegos y de aplicaciones.
+Un acelerador de hardware es un componente que puede acelerar el procesamiento de datos. 
+
+Este tipo de instancias de informática son útiles en aplicaciones de gráficos, el streaming de juegos y de aplicaciones.
 		
 ### **Instancias optimizadas para almacenamiento**
 
@@ -54,17 +63,17 @@ Amazon EC2 nos ofrece una variedad de opciones de precios en función del caso d
 
 ### **Bajo demanda**
 
-Este tipo de instancias son adecuadas para las cargas de trabajo irregulares a corto plazo que no puedan interrumpirse. No se aplican costes iniciales ni contratos mínimos. Las instancias se ejecutan hasta que las detengamos. Pagaremos únicamente por el tiempo que usemos la instancia.
+Este tipo de instancias son adecuadas para las cargas de trabajo irregulares a corto plazo que no puedan interrumpirse. No se aplican costes iniciales ni contratos mínimos. Las instancias se ejecutan hasta que las detengamos y pagaremos únicamente por el tiempo que usemos la instancia.
 
-Estas instancias son útiles para temas de desarrollo y pruebas de aplicaciones. Si vamos a tener cargas a largo plazo, un año por ejemplo, podemos hacer uso de otro tipo de instancia como son las instancias reservadas.
+Estas instancias son útiles para temas de desarrollo y pruebas de aplicaciones. Si vamos a tener cargas a largo plazo, un año por ejemplo, podemos hacer uso de otro tipo de instancia como son las instancias reservadas para reducir costes.
 				
 ### **Savings Plans de Amazon EC2**
 
-Savings Plans permite reducir el coste por medio de la confirmación de una cantidad uniforme de uso informático,medido en dólares por hora durante un plazo de 1 o 3 años.
+Savings Plans permite reducir el coste por medio de la confirmación de una cantidad uniforme de uso informático,medido en dólares por hora, durante un plazo de 1 o 3 años.
 
 El uso que hagamos hasta el compromiso se cobrará con la tarifa descontada. Una vez que sobrepasemos el compromiso se cobrará la tarifa regular bajo demanda.
 		
-Se puede hacer uso de la herramienta AWS Cost Explorer para ver los costes y uso de AWS a lo largo del tiempo. AWS Cost Explorer analiza el uso de Amazon EC2 en los últimos 7,30 o 60 días. También proporciona recomendaciones personalizadas para Savings Plans.
+Se puede hacer uso de la herramienta AWS Cost Explorer para ver los costes y uso de AWS a lo largo del tiempo. AWS Cost Explorer analiza el uso de Amazon EC2 en los últimos 7,30 o 60 días y también proporciona recomendaciones personalizadas para Savings Plans.
 
 ### **Instancias reservadas**
 
@@ -78,7 +87,7 @@ Cuando finalice el plazo de instancia reservada, podemos continuar usando la ins
 
 Ideales para cargas de trabajo con tiempos de inicio y fin flexibles o que puedan resistir interrupciones.
 
-Estas instancias hacen uso del cómputo de Amazon EC2 no utiliza y nos ofrecen ahorros de hasta un 90 % de los precios bajo demanda.
+Estas instancias hacen uso del cómputo de Amazon EC2 no utiliza y nos ofrecen ahorros de hasta un 90 % respecto los precios bajo demanda.
 		
 Si una vez que hemos lanzado la instancia,la capacidad de computo no está disponible o si aumenta la demanda de instancias spot,la instancia pude interrumpirse.
 
