@@ -11,20 +11,20 @@ En el post anterior instalamos Docker y para probar la correcta instalación lan
 
 El motivo por el cual hicimos uso del comando sudo es el siguiente. El demonio de Docker hace uso de un [socket de Unix](https://es.wikipedia.org/wiki/Socket_Unix) y éste es propiedad del usuario root.
 
-Para usar Docker con un usuario no root, podemos crear un grupo docker, en caso de no existir ya, y añadir nuestro usuario a este grupo.De esta forma cuando se inicie el demonio de Docker, el socket Unix que se crea es accesible por los usuarios de este grupo.
+Para usar Docker con un usuario no root, podemos crear un grupo docker, en caso de no existir ya, y añadir nuestro usuario a este grupo. De esta forma cuando se inicie el demonio de Docker, el socket Unix que se crea es accesible por los usuarios de este grupo.
 
 Debemos tener en cuenta el riesgo que conlleva la creación de este grupo, ya que tendrá privilegios equivalentes a root.
 
 Se puede evitar lo anterior y ejecutar Docker sin privilegios de root en lo que se conoce como [Rootless mode](https://docs.docker.com/engine/security/rootless/). Para usar ese modo hay que cumplir unos requisitos previos y tiene una serie de limitaciones. En este post vamos a centrarnos en la ejecución de Docker con un usuario no root dejando el Rotlees mode para otro futuro post.
 
-A continuación vamos a crer el grupo y agregar nuestro usuario:
+A continuación vamos a crear el grupo y agregar nuestro usuario:
 
 ```console
 $ sudo groupadd docker
 $ sudo usermod -aG docker $USER
 ```
 Nota:
-El parámetro -aG nos permite agegrar al grupo al usuario
+El parámetro -aG nos permite agregar al grupo al usuario
 $USER es un variable que contiene nuestro usuario. Haciendo un eco $USER veremos el valor de la variable.
 
 Para comprobar si se hemos agregado al usuario al grupo
@@ -52,14 +52,14 @@ $ docker run hello-world
 
 El anterior comando lo que hace es descargar una imagen de prueba y la ejecuta en un contenedor.
 
-En caso que recibamos el siguiente WARNING, nos indica que no tenemos permisos sobre el directorio de docker. Esto puede suceder si anteriormente habímos lanzado docker como sudo.
+En caso que recibamos el siguiente WARNING, nos indica que no tenemos permisos sobre el directorio de docker. Esto puede suceder si anteriormente habíamos lanzado docker como sudo.
 
 ```console
 WARNING: Error loading config file: /home/user/.docker/config.json -
 stat /home/user/.docker/config.json: permission denied
 ```
 
-Tenemos dos formas de solucionarlo, elimiar el directorio ~/.docker (se volverá a crear de forma automática pero perderemos la configuración personalizada) o bien cambiando el propietario y los permisos.
+Tenemos dos formas de solucionarlo, eliminar el directorio ~/.docker (se volverá a crear de forma automática pero perderemos la configuración personalizada) o bien cambiando el propietario y los permisos.
 
 Para hacer lo segundo, ejecutaremos
 
