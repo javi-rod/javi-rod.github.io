@@ -12,7 +12,7 @@ Podemos imaginar que ese contenedor de Docker, es como un container de barco com
 
 <img src="https://javi-rod.github.io/assets/images/20211018/containers.jpg" alt="alt text" />
 
-La aplicación, al estar empaquetada en un contenedor, incluye además del código, sus dependencias, evitando que en un máquina funcione y en otra no. Por ejemplo, supangamos que una aplicación requiere de JAVA 7 pero yo tengo JAVA 6. A mi no me funcionará la aplicación al no tener la JAVA adecuada, esto se evita teniendo la aplicación empaquetada en un contenedor ya que nos permitirá ejecutar la aplicación siempre en el mismo entorno.
+La aplicación, al estar empaquetada en un contenedor, incluye además del código, sus dependencias, evitando que en un máquina funcione y en otra no. Por ejemplo, supongamos que una aplicación requiere de JAVA 7 pero yo tengo JAVA 6. A mi no me funcionará la aplicación al no tener la JAVA adecuada, esto se evita teniendo la aplicación empaquetada en un contenedor ya que nos permitirá ejecutar la aplicación siempre en el mismo entorno.
 
 Aunque el concepto de contenedores es similar a la virtualización de máquinas tiene sus diferencias.
 
@@ -20,8 +20,8 @@ Aunque el concepto de contenedores es similar a la virtualización de máquinas 
 
 Las máquinas virtuales necesitan de su propio sistema operativo como si se tratase de un equipo físico, además de un hardware virtual (RAM,Disco...) Este hardware es compartido por todas las máquinas virtuales que tengamos en nuestro Host.
 
-En Docker, en lugar de tener ese hardware subyacente, solo se virtualiza el sistema operativo.Cada contenedor comparte el Kernel del sistema operativo del host además de los binarios y las bibliotecas.
+En Docker, en lugar de tener ese hardware subyacente, solo se virtualiza el sistema operativo. Cada contenedor comparte el Kernel del sistema operativo del host además de los binarios y las bibliotecas.
  
-Debemos tener en cuenta, que al compartir el kernel con el host, sólo podemos usar un contenedor de Linux en un host Linux y un contenedor Windows en un host Windows.Aunque aquí podemos hacer un pequeño matiz, se puede hacer uso de Docker Desktop en Windows para para tener un contenedor Linux en Windows. 
+Debemos tener en cuenta, que al compartir el kernel con el host, sólo podemos usar un contenedor de Linux en un host Linux y un contenedor Windows en un host Windows. Aunque aquí podemos hacer un pequeño matiz, se puede hacer uso de Docker Desktop en Windows para para tener un contenedor Linux en Windows. 
 
 Docker Desktop, es una aplicación que puede ser usada en entornos Mac o Windows,y nos permite crear y compartir aplicaciones y microservicios en contenedores, tal como viene recogido en la documentación oficial.
