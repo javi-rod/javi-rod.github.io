@@ -9,9 +9,9 @@ Hola a todos.
 
 Sirva este post como presentación de este sitio.
 
-Javi Rod IT surge como un proyecto personal donde ir escibiendo apuntes, en forma de post, relacionados con las Tecnologías de la Información (TI). Mi objetivo es tener más accesible esos apuntes, que no sea un one note, además de poder compartirlo con todos aquellos que lo necesiten.
+Javi Rod IT surge como un proyecto personal donde ir escribiendo apuntes, en forma de post, relacionados con las Tecnologías de la Información (TI). Mi objetivo es tener más accesible esos apuntes, que no sea un one note, además de poder compartirlo con todos aquellos que lo necesiten.
 
-Espero que los post os puedan ser de utilidad y si detectáis algun fallo podéis notificiarlo para corregirlo.
+Espero que los post os puedan ser de utilidad y si detectáis algún fallo podéis notificarlo para corregirlo.
 
 Un saludo.
 
