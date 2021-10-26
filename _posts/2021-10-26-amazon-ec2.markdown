@@ -2,6 +2,7 @@
 layout: post
 title:  "Amazon Elastic Compute Cloud (Amazon EC2)"
 date:   2021-10-26 09:30
+share: true
 categories: [Cloud,AWS]
 tags:
 - Cloud
@@ -81,7 +82,7 @@ Estas instancias son un descuento de facturación aplicada al uso de instancias 
 
 Cuando finalice el plazo de instancia reservada, podemos continuar usando la instancia sin interrupción pero se cobrará tarifas bajo demanda hasta que:
 - Terminemos la instancia
-- Compremos una nueva instancia reservada que concida con los atributos de la instancia (tipo, región, tenencia y plataforma)
+- Compremos una nueva instancia reservada que coincida con los atributos de la instancia (tipo, región, tenencia y plataforma)
 
 ### **Instancias de spot**
 
