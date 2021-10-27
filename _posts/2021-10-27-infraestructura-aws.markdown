@@ -38,8 +38,9 @@ El precio es otro factor a tener en cuenta. Hay diferencia entre ejecutar aplica
 
 <center>
     <img src="https://javi-rod.github.io/assets/images/20211027/Mapa_Regiones_AWS.png" alt="Regiones AWS" width="800" />
-    <figcaption>Mapa de Regiones de AWS. Fuente:AWS.</figcaption>
+    <figcaption>Mapa de Regiones. Fuente:AWS.</figcaption>
 </center>
+
 
 
 
