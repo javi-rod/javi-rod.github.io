@@ -12,11 +12,11 @@ En el post de hoy vamos hablar la Infraestructura de global de AWS formada por R
 
 ### **Regiones**
 
-Una Región consiste en una zona geográfica en la cual se disponen centros de datos agrupados. AWS crear regiones para estar cerca de donde el tráfico empresarial lo exige.
+Una Región consiste en una zona geográfica en la cual se disponen centros de datos agrupados. AWS crea regiones para estar cerca de donde el tráfico empresarial lo exige.
 
 Dentro de cada una de las regiones se cuentan con varios centros de datos. Las regiones pueden conectarse entre si mediante una fibra de alta velocidad administrada por AWS.
 
-Cada región se encuentra separada de todas las demás, ningún dato entra o sale de su entorno en esa región sin nosotros concedamos explícitamente permiso para que se muevan esos datos. 
+Cada región se encuentra separada de todas las demás, ningún dato entra o sale de nuestro entorno en esa región sin que nosotros concedamos explícitamente permiso para que se muevan esos datos. 
 
 A la hora de seleccionar una región, debemos tener en cuenta los 4 factores siguientes:
 
@@ -60,9 +60,9 @@ Resumiendo, una ubicación de borde es un sitio que Amazon CloudFront utiliza a 
 
 ### **Zonas locales de AWS (AWS Local Zones)**
 
-Las zonas locales de AWS son una extensión de una región de AWS donde se ejecutan las aplicaciones sensibles a la latencia. Ponen el cómputo,almacenamiento, las bases de datos y otros servicios de AWS más cerca del usaurio final.
+Las zonas locales de AWS son una extensión de una región de AWS donde se ejecutan las aplicaciones sensibles a la latencia. Ponen el cómputo,almacenamiento, las bases de datos y otros servicios de AWS más cerca del usuario final.
 
-Las zonas locales de AWS ubican el cómputo, el almacenamiento, la base de datos y otros servicios selectos de AWS más cerca de los usuarios finales. Con las zonas locales de AWS, puede ejecutar fácilmente aplicaciones sensibles que requieren latencias de milisegundos de un solo dígito para sus usuarios finales, como la creación de contenido multimedia y de entretenimiento, juegos en tiempo real, simulaciones de depósitos, automatización de diseño electrónico y aprendizaje automático.
+Con las zonas locales de AWS, puede ejecutar fácilmente aplicaciones sensibles que requieren latencias de milisegundos de un solo dígito para sus usuarios finales, como la creación de contenido multimedia y de entretenimiento, juegos en tiempo real, simulaciones de depósitos, automatización de diseño electrónico y aprendizaje automático.
 
 ### **AWS Wavelength**
 
