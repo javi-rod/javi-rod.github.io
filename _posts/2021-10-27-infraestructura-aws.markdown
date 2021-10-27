@@ -8,7 +8,7 @@ tags:
 - AWS
 ---
 
-En el post de hoy vamos hablar de la Infraestructura de global de AWS formada por Regiones, Zonas de disponibilidad (AZ - availability zones), Ubicaciones de borde (EDGE locations), Zonas locales (Local Zones), AWS Wavelength y AWS Outposts
+En el post de hoy vamos hablar de la Infraestructura global de AWS, formada por Regiones, Zonas de disponibilidad (AZ - availability zones), Ubicaciones de borde (EDGE locations), Zonas locales (Local Zones), AWS Wavelength y AWS Outposts
 
 ### **Regiones**
 
