@@ -3,6 +3,7 @@ layout: post
 title:  Infraestructura global de AWS
 date:   2021-10-27 09:30
 categories: [Cloud,AWS]
+share: true
 tags: 
 - Cloud
 - AWS
