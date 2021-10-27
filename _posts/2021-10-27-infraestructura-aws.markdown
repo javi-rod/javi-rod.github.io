@@ -41,9 +41,7 @@ El precio es otro factor a tener en cuenta. Hay diferencia entre ejecutar aplica
     <figcaption>Mapa de Regiones. Fuente:AWS.</figcaption>
 </center>
 
-
-
-
+<br>
 
 ### **Zonas de disponibilidad (AZ - availability zones)**
 
