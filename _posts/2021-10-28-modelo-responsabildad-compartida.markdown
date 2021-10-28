@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Modelo de responsabilidad compartida en AWS
-date:   2021-10-28 09:30
+title: Modelo de responsabilidad compartida en AWS
+date:  2021-10-28 09:30
 share: true
 categories: [Cloud,AWS]
 tags: 
@@ -31,8 +31,3 @@ AWS también es el responsable de proteger las regiones, las zonas disponibilida
 
 <img src="https://javi-rod.github.io/assets/images/20211028/Esquema-responsabilidad-compartida.jpg" alt="Esquema responsabilidad compartida" width="600" />
 <figcaption>Esquema modelo de responsabilidad compartida en AWS.</figcaption>
-<br>
-<br>
-<br>
-
-Si deseáis profundizar más, os dejo el enlace a la web de AWS, <a href=https://aws.amazon.com/es/compliance/shared-responsibility-model/> modelo de responsabilidad compartida AWS </a>
