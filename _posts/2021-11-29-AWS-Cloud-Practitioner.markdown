@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AWS Certified Cloud Practitioner (CLF-C01)
-date:   2021-10-29 09:30
+date:   2021-11-29 09:30
 share: true
 categories: [Cloud,AWS,Certificaciones]
 tags: 
