@@ -16,8 +16,6 @@ Antes de seguir, vamos a ver que certificaciones tiene AWS.
 
 <img src="https://javi-rod.github.io/assets/images/20211129/Certificaciones_AWS.png" alt="Certificaciones AWS" width="600" />
 
-</br>
-
 Cómo vemos en el esquema anterior, AWS tiene 3 niveles (Foundational, Associate y Professional) más otro adicional de especialidad.
 
 El nivel Foundational, es el básico, es la certificación que da entrada a la nube de AWS. Según se indica, se requieren 6 meses de conocimiento básico sobre la nube de AWS así como del sector. La verdad, desde mi punto de vista, no es necesario ya que se trata de un nivel de entrada y no se requiere una experiencia trabajando de forma práctica con el entorno de AWS. Puedes aprobar la certificación sin iniciar sesión en la consola de AWS.
