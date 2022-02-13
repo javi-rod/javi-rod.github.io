@@ -47,23 +47,23 @@ La forma de licenciar es bastante sencilla como veremos a continuación.
 
 Lo primero que haremos es conectarnos, vía web, a nuestro host ESXi. Una vez allí, en el panel **Navegador**, desplegamos **Host** si no estuviera desplegado y a continuación hacemos clic en **Administrar**
 
-<img src="https://javi-rod.github.io/assets/images/20220213/licencia_ESXi_1" alt="Navegador-Host-Administrar" width="600" />
+<img src="https://javi-rod.github.io/assets/images/20220213/licencia_ESXi_1.png" alt="Navegador-Host-Administrar" width="300" />
 
 Luego iremos a **Licencias** y haremos clic en **Asignar licencia**
 
-<img src="https://javi-rod.github.io/assets/images/20220213/licencia_ESXi_2" alt="Licencias-Asignar licencia" width="600" />
+<img src="https://javi-rod.github.io/assets/images/20220213/licencia_ESXi_2.png" alt="Licencias-Asignar licencia" width="600" />
 
 Después introduciremos la clave de licencia y la comprobaremos
 
-<img src="https://javi-rod.github.io/assets/images/20220213/licencia_ESXi_3" alt="Clave" width="600" />
+<img src="https://javi-rod.github.io/assets/images/20220213/licencia_ESXi_3.png" alt="Clave" width="600" />
 
 Si es correcta, nos lo indiciará como vemos en la imagen y ya podemos asignarla
 
-<img src="https://javi-rod.github.io/assets/images/20220213/licencia_ESXi_4" alt="Asignar Clave" width="600" />
+<img src="https://javi-rod.github.io/assets/images/20220213/licencia_ESXi_4.png" alt="Asignar Clave" width="600" />
 
 Ahora cuando vayamos a licencias ya la veremos asignada y no aparecerá el mensaje Evaluation Mode
 
-<img src="https://javi-rod.github.io/assets/images/20220213/licencia_ESXi_5" alt="Clave asignada" width="600" />
+<img src="https://javi-rod.github.io/assets/images/20220213/licencia_ESXi_5.png" alt="Clave asignada" width="600" />
 
 Así de sencillo es licenciar el host. Espero que os sea de utilidad y os haya gustado.
 
