@@ -21,19 +21,19 @@ Ya que no podemos arrastrar el correo, ni hay una opción que nos permite descar
 
 1-Crear un nuevo correo electrónico
 
-<img src="https://javi-rod.github.io/assets/images/20220214/OWA_Mensaje_Nuevo.PNG" alt="Navegador-Host-Administrar" width="300" />
+<img src="https://javi-rod.github.io/assets/images/20220214/OWA_Mensaje_Nuevo.png" alt="Nuevo_Mensaje" width="300" />
 
 2-Seleccionamos uno de los correos que deseamos descargar, y lo arrastramos al nuevo correo
 
-<img src="https://javi-rod.github.io/assets/images/20220214/OWA_Arrastrar_Mensaje.PNG" alt="Navegador-Host-Administrar" width="300" />
+<img src="https://javi-rod.github.io/assets/images/20220214/OWA_Arrastrar_Mensaje.PNG" alt="Arrastrar_Mensaje" width="300" />
 
 3-Después de hacer el segundo paso, veremos el correo adjuntado
 
-<img src="https://javi-rod.github.io/assets/images/20220214/Correo_adjuntado.png" alt="Navegador-Host-Administrar" width="300" />
+<img src="https://javi-rod.github.io/assets/images/20220214/Correo_adjuntado.png" alt="Correo_Adjuntado" width="300" />
 
 4-Ahora desplegamos las opciones (1) y hacemos clic en Descargar (2)
 
-<img src="https://javi-rod.github.io/assets/images/20220214/Descargar_correo" alt="Navegador-Host-Administrar" width="300" />
+<img src="https://javi-rod.github.io/assets/images/20220214/Descargar_correo" alt="Descargar_Correo" width="300" />
 
 La única diferencia en cuanto hacerlo con Outlook, es el formato del correo, en lugar de guardarse como .msg lo hace como .eml 
 
