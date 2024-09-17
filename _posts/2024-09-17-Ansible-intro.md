@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ansible - Introducción
-date:   2024-09-17 20:00
+date:   2024-09-17 09:00
 share: true
 categories: [Ansible]
 tags: 
