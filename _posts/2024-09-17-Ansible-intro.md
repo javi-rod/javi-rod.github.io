@@ -32,4 +32,4 @@ Para realizar las automatizaciones, se hace uso de ficheros YAML que se denomina
 
 Destacar que se trata de un sistema idempotente. Esto quiere decir que cuando ejecutemos un playbook y los cambios solicitados en éste ya estén presentes, no se realizan cambios.
 
-<img src="https://javi-rod.github.io/assets/images/20240917/Ansible_logo" alt="Ansible Logo" width="75" />
+<img src="https://javi-rod.github.io/assets/images/20240917/Ansible_logo.jpeg" alt="Ansible Logo" width="75" />
