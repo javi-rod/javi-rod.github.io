@@ -6,6 +6,7 @@ share: true
 categories: [Ansible,IaC (Infrastructure as Code)]
 tags: 
 - Ansible
+- IaC (Infrastructure as Code)
 ---
 
 # ¿Qué es Ansible? 

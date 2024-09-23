@@ -6,6 +6,7 @@ share: true
 categories: [Ansible,IaC (Infrastructure as Code)]
 tags: 
 - Ansible
+- IaC (Infrastructure as Code)
 ---
 
 En el curso que realicé de Ansible, en KodeKloud, enseñaban a montar un laboratorio y os quiero mostrar, cómo de sencillo es.
