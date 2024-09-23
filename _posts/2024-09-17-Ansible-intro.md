@@ -3,7 +3,7 @@ layout: post
 title: Ansible - Introducción
 date:   2024-09-17 09:00
 share: true
-categories: [Ansible]
+categories: [Ansible,IaC (Infrastructure as Code)]
 tags: 
 - Ansible
 ---
