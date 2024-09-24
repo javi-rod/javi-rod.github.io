@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ansible - Laboratorio
-date:   2024-09-24 09:00
+date: 2024-09-24 09:00
 share: true
 categories: [Ansible,IaC (Infrastructure as Code)]
 tags: 
