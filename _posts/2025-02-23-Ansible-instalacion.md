@@ -9,9 +9,7 @@ tags:
 - IaC (Infrastructure as Code)
 ---
 
-En la entrada anterior, titulada [Ansible - Laboratorio ](https://javi-rod.github.io/2024/09/Ansible-lab/) vimos como montar un laboratorio de Ansible con VirtualBox. En una de las partes explicaba cómo instalar Ansible en una máquina con el gestor de paquetes, pero hay otras formas de las que hablará a continuación.
-
-Antes de continuar, vamos hablar de un concepto, el nodo de control. 
+En la entrada anterior, titulada [Ansible - Laboratorio ](https://javi-rod.github.io/2024/09/Ansible-lab/) vimos como montar un laboratorio de Ansible con VirtualBox. En una de las partes explicaba cómo instalar Ansible en una máquina con el gestor de paquetes, pero hay otras formas que veremos después de hablar de un concepto, el nodo de control. 
 
 **Nodo de control**
 
