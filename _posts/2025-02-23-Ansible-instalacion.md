@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ansible - Laboratorio
+title: Ansible - Instalación en Nodo de Control
 date: 2025-02-23 00:00
 share: true
 categories: [Ansible,IaC (Infrastructure as Code)]
