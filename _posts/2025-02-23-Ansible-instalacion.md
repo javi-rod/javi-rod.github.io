@@ -33,15 +33,15 @@ Ahora vamos hablar de las formas de **instalar Ansible**:
  
    * Instalar: `sudo pip install ansible`
 
-   <img src="../assets/images/20250223/01_pip_install_ansible.png" alt="Instalar Ansible con pip"/>
+   <img src="https://javi-rod.github.io/assets/images/20250223/01_pip_install_ansible.png" alt="Instalar Ansible con pip"/>
 
    * Instalar una versión específica: `sudo pip install ansible==2.4`
 
-   <img src="../assets/images/20250223/02_pip_install_ansible_ver.png" alt="Instalar un versión concreta de Ansible con pip"/>
+   <img src="https://javi-rod.github.io/assets/images/20250223/02_pip_install_ansible_ver.png" alt="Instalar un versión concreta de Ansible con pip"/>
 
    * Actualizar: `pip install --upgrade ansible`
 
-   <img src="../assets/images/20250223/03_pip_install_upgrade_ansible.png" alt="Actualizar Ansible con pip"/>
+   <img src="https://javi-rod.github.io/assets/images/20250223/03_pip_install_upgrade_ansible.png" alt="Actualizar Ansible con pip"/>
 
 3. **Desde repositorio de GIT**
 
