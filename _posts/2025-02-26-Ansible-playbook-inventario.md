@@ -25,7 +25,7 @@ Un playbook de Ansible es un archivo en formato YAML que describe un conjunto de
 
 Los playbooks de Ansible contienen:
 
-* Hosts: Los sistemas en los que se ejecutarán las tareas. También se les conoce como targets.
+* Hosts: Los sistemas en los que se ejecutarán las tareas. También se les conoce como targets o nodos gestionados.
 
 * Tareas: Acciones que Ansible debe llevar a cabo, como instalar paquetes, copiar archivos o ejecutar comandos.
 
@@ -87,7 +87,7 @@ El inventario permite organizar y categorizar los hosts de manera lógica y fác
 
 Un ejemplo de archivo de inventario en formato INI podría verse así:
 
-```
+```ini
 [servidores_web]
 web1.example.com
 web2.example.com

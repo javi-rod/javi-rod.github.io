@@ -43,35 +43,35 @@ Ahora vamos hablar de las formas de **instalar Ansible**:
 
 3. **Desde repositorio de GIT**
 
-* 3.1 Instalar dependencias
+    3.1. Instalar dependencias
 
     ```
     sudo apt-get update
     sudo apt-get install git python3-pip python3-venv
     ```
 
-* 3.2 Clonar repositorio y cambiar al directorio
+    3.2. Clonar repositorio y cambiar al directorio
 
     ```
     git clone https://github.com/ansible/ansible.git
     cd ansible
     ```
 
-* 3.3.Crear y activar un entorno virutal (aunque no es obligatorio lo recomiendan para aislar la instalación de Ansible)
+    3.3. Crear y activar un entorno virutal (aunque no es obligatorio lo recomiendan para aislar la instalación de Ansible)
 
     ```
     python3 -m venv myenv
     source myenv/bin/activate
     ```
 
-* 3.4 Instalar Asible y dependencias
+    3.4. Instalar Asible y dependencias
 
     ```
     pip install -r requirements.txt
     python3 setup.py install
     ```
 
-* 3.5 Configurar variables de entorno (si fuera necesario)
+    3.5. Configurar variables de entorno (si fuera necesario)
 
     En caso de que haya algún problema al ejecutar los comandos de Ansible, puede que necesitemos añadir los binarios de Ansible a nuestro PATH
 
