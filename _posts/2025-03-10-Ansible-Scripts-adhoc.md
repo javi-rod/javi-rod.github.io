@@ -42,7 +42,7 @@ Si volvemos a lanzar el script, vemos que ahora el node00 lo marca como SUCCESS,
 
 <img src="https://javi-rod.github.io/assets/images/20250310/salida_ejemplo1_success.png" alt="Salida de la ejecución del script si lo lanzamos de nuevo"/>
  
- #### Ejemplo 2
+#### Ejemplo 2
  
  Crear un shell script host_data.sh en en ~/playbooks y hacerlo ejecutable.
  
