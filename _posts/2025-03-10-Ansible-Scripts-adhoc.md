@@ -36,11 +36,11 @@ ansible node00 -m copy -a "src=/etc/resolv.conf dest=/tmp/resolv.conf" -i invent
 
 Esto es lo que veríamos al lanzar el script. Vemos que en el node00 hay un estado CHANGED y nos muestra los cambios.
  
-<img src="../assets/images/20250310/salida_ejemplo1_changed.png" alt="Salida de la ejecución del script"/>
+<img src="https://javi-rod.github.io/assets/images/20250310/salida_ejemplo1_changed.png" alt="Salida de la ejecución del script"/>
 
 Si volvemos a lanzar el script, vemos que ahora el node00 lo marca como SUCCESS,esto quiere decir que la tarea fue ejecutada con éxito pero sin necesidad de realizar cambios.
 
-<img src="../assets/images/20250310/salida_ejemplo1_success.png" alt="Salida de la ejecución del script si lo lanzamos de nuevo"/>
+<img src="https://javi-rod.github.io/assets/images/20250310/salida_ejemplo1_success.png" alt="Salida de la ejecución del script si lo lanzamos de nuevo"/>
  
  #### Ejemplo 2
  
@@ -82,7 +82,7 @@ ansible-playbook -i inventory playbook.yml -vv
 
 Si ejecutamos el script esto es lo que veremos. El uptime de los servidores node00 y node01 que tenemos en el inventario.
 
-<img src="../assets/images/20250310/salida_ejemplo2.png" alt="Salida de la ejecución del script del ejemplo 2"/>
+<img src="https://javi-rod.github.io/assets/images/20250310/salida_ejemplo2.png" alt="Salida de la ejecución del script del ejemplo 2"/>
  
 A continuación dejo posibles problemas que puedan surgir y como solucionarlos.
 
