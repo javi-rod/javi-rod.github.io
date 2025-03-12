@@ -491,13 +491,13 @@ En este punto, exploraremos cómo realizar diversas tareas administrativas en el
 
 4 - En el archivo /var/www/html/index.html en el nodo web1 añadir un contenido adicional usando el módulo blockinfile. A continuación se muestra el contenido:
 
-    ```
-    ¡Bienvenido a KodeKloud!
+  ```
+  ¡Bienvenido a KodeKloud!
 
-    Esto es Ansible Lab.
-    ```
+  Esto es Ansible Lab.
+  ```
 
-    El usuario propietario y el grupo propietario del archivo debe ser apache. También hay que asegurarse de que el bloque se añade al principio del archivo. 
+  El usuario propietario y el grupo propietario del archivo debe ser apache. También hay que asegurarse de que el bloque se añade al principio del archivo. 
 
 
 ```yaml
@@ -518,7 +518,7 @@ En este punto, exploraremos cómo realizar diversas tareas administrativas en el
 
 5 - En el nodo web1 queremos ejecutar nuestro servidor httpd en el puerto 8080. Hay que cambiar el puerto 80 a 8080 en el archivo /etc/httpd/conf/httpd.conf usando el módulo replace. También asegurarse de que Ansible reinicia el servicio httpd después de hacer el cambio.
 
-    Listen 80 es el parámetro que necesita ser cambiado en /etc/httpd/conf/httpd.conf
+Listen 80 es el parámetro que necesita ser cambiado en /etc/httpd/conf/httpd.conf
 
 
 ```yaml
@@ -762,18 +762,18 @@ Cree un playbook ~/playbooks/reboot.yml para añadir un cron llamado cleanup en 
 
 5 - En node00 queremos mantener actualizados los paquetes instalados, por lo que nos gustaría ejecutar actualizaciones de yum regularmente.
 
-    Cree un playbook ~/playbooks/yum_update.yml y cree una tarea cron como se describe a continuación:
+Cree un playbook ~/playbooks/yum_update.yml y cree una tarea cron como se describe a continuación:
 
-    A. No añada cron directamente usando crontab en su lugar cree un archivo cron /etc/cron.d/ansible_yum.
+* No añada cron directamente usando crontab en su lugar cree un archivo cron /etc/cron.d/ansible_yum.
 
-    B. El cron debe ejecutarse todos los domingos a las 8:05 am.
+* El cron debe ejecutarse todos los domingos a las 8:05 am.
 
-    C. El nombre del cron debe ser yum update.
+* El nombre del cron debe ser yum update.
 
-    D. El cron debe ser agregado para el usuario root
+* El cron debe ser agregado para el usuario root
 
 
-    Utilice el comando `yum -y update`
+Utilice el comando `yum -y update`
 
 
 ```yaml
@@ -835,9 +835,9 @@ En este último punto, veremos cómo gestionar usuarios y grupos en sistemas Lin
 3 - Supongamos que Sabin Nepal se unió a su equipo el primer día de 2020 como contratista especial para trabajar durante un período de 3 años, es decir, hasta el final del año 2023.
 Él necesita sus cuentas en los hosts remotos hasta su período de trabajo.
 
-    Escribe un playbook add_user.yml para crear su cuenta de usuario con el nombre de usuario neymarsabin que expirará después de 3 años. La opción expires en el módulo users está en la época. Así que domingo, 31 de diciembre de 2023 11:59:59 PM GMT== 1704067199 como tiempo de época
+Escribe un playbook add_user.yml para crear su cuenta de usuario con el nombre de usuario neymarsabin que expirará después de 3 años. La opción expires en el módulo users está en la época. Así que domingo, 31 de diciembre de 2023 11:59:59 PM GMT== 1704067199 como tiempo de época
     
-    Recuerda: tu playbook debe estar dentro de /home/thor/playbooks y usar el archivo de inventario allí.
+Recuerda: tu playbook debe estar dentro de /home/thor/playbooks y usar el archivo de inventario allí.
 
 ```yaml
 ---
