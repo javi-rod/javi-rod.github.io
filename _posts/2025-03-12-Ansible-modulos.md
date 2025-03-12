@@ -51,17 +51,17 @@ NOTA: Aunque los ejemplos de esta sección se centran en el uso del módulo `yum
 
 1. Instalar el paquete httpd en web1 usando el módulo yum.
 
-    ```yaml
-    ---
-    - name: Install httpd package
-      hosts: web1
-      become: yes
-      tasks:
-        - name: Install httpd
-          yum:
-            name: httpd
-            state: present
-    ```
+   ```yaml
+   ---
+   - name: Install httpd package
+     hosts: web1
+     become: yes
+     tasks:
+       - name: Install httpd
+         yum:
+           name: httpd
+           state: present
+   ```
 
 2. Instalar el rpm (https://mirror.stream.centos.org/9-stream/AppStream/x86_64/os/Packages/wget-1.21.1-8.el9.x86_64.rpm) en web1 usando el módulo yum
 
