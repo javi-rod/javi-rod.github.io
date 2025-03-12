@@ -65,68 +65,67 @@ NOTA: Aunque los ejemplos de esta sección se centran en el uso del módulo `yum
 
 2. Instalar el rpm (https://mirror.stream.centos.org/9-stream/AppStream/x86_64/os/Packages/wget-1.21.1-8.el9.x86_64.rpm) en web1 usando el módulo yum
 
-    ```yaml
-    ---
-    - name: Download and install package
-      hosts: web1
-      become: yes
-      tasks:
-        - name: Download the package
-          get_url:
-            url: "https://mirror.stream.centos.org/9-stream/AppStream/x86_64/os/Packages/wget-1.21.1-8.el9.x86_64.rpm"
-            dest: "/tmp/wget-1.21.1-8.el9.x86_64.rpm"
+   ```yaml
+   ---
+   - name: Download and install package
+     hosts: web1
+     become: yes
+     tasks:
+       - name: Download the package
+         get_url:
+         url: "https://mirror.stream.centos.org/9-stream/AppStream/x86_64/os/Packages/wget-1.21.1-8.el9.x86_64.rpm"
+         dest: "/tmp/wget-1.21.1-8.el9.x86_64.rpm"
 
-        - name: Install the package
-          yum:
-            name: "/tmp/wget-1.21.1-8.el9.x86_64.rpm"
-            state: present
+       - name: Install the package
+         yum:
+           name: "/tmp/wget-1.21.1-8.el9.x86_64.rpm"
+           state: present
 
-        - name: Remove the package file
-          file:
-            path: "/tmp/wget-1.21.1-8.el9.x86_64.rpm"
-            state: absent
-    ```
+       - name: Remove the package file
+         file:
+           path: "/tmp/wget-1.21.1-8.el9.x86_64.rpm"
+           state: absent
+   ```  
 
 3. Instalar el paquete unzip-5.52 en web1.
 
-    ```yaml
-    ---
-    - hosts: web1
-      tasks:
-        - name: Install unzip package
-          yum:
-            name: unzip-5.52
-            state: present
-
-    ```
+   ```yaml
+   ---
+   - hosts: web1
+     tasks:
+       - name: Install unzip package
+         yum:
+           name: unzip-5.52
+           state: present
+   ```
 4. Instalar la última versión de iotop.
 
-    ```yaml
-    ---
-    - hosts: all
-      tasks:
-        - name: Install iotop package
-          yum:
-            name: iotop
-            state: latest      
-    ```
+   ```yaml
+   ---
+   - hosts: all
+     tasks:
+       - name: Install iotop package
+         yum:
+           name: iotop
+           state: latest      
+   ```
 5. Instalar en web1 la última versión de sudo y poner la version vsftpd 3.0.3, ya está presente vsftpd v3.0.5 que deseamos eliminar.
 
     ```yaml
-    ---
-    - name: Install multi-pkgs
-      hosts: web1
-      become: yes
-      tasks:
-        - name: Install sudo latest
-          yum:
-            name: sudo
-            state: latest
-        - name: Install vsftpd v3.0.3
-          yum:
-            name: vsftpd-3.0.3
-            state: present
-            allow_downgrade: yes    
+   ---
+   - name: Install multi-pkgs
+     hosts: web1
+     become: yes
+     tasks:
+       - name: Install sudo latest
+         yum:
+           name: sudo
+           state: latest
+       - name: Install vsftpd v3.0.3
+         yum:
+           name: vsftpd-3.0.3
+           state: present
+           allow_downgrade: yes    
      ```
 
 ## Servicios
