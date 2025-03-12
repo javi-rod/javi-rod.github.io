@@ -514,6 +514,7 @@ En este punto, exploraremos cómo realizar diversas tareas administrativas en el
           replace: 'Listen 8080'
       - service: name=httpd state=restarted
     ```
+
 ## Archivado
 
 A continuación, vamos a ver unos ejemplos de tareas para gestionar la compresión, descompresión y configuración de archivos, así como la instalación y personalización de servicios como Nginx. Además, se hace uso de módulos específicos como `community.general.archive`, `ansible.builtin.unarchive`, y otros útiles para escenarios prácticos de administración de sistemas.
