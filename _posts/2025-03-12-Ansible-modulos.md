@@ -64,32 +64,28 @@ NOTA: Aunque los ejemplos de esta sección se centran en el uso del módulo `yum
 
 ```
 
-
-
-
-
 2. Instalar el rpm (https://mirror.stream.centos.org/9-stream/AppStream/x86_64/os/Packages/wget-1.21.1-8.el9.x86_64.rpm) en web1 usando el módulo yum
 
 ```yaml
- ---
-   - name: Download and install package
-     hosts: web1
-     become: yes
-     tasks:
-       - name: Download the package
-         get_url:
-         url: "https://mirror.stream.centos.org/9-stream/AppStream/x86_64/os/Packages/wget-1.21.1-8.el9.x86_64.rpm"
-         dest: "/tmp/wget-1.21.1-8.el9.x86_64.rpm"
+---
+- name: Download and install package
+  hosts: web1
+  become: yes
+  tasks:
+    - name: Download the package
+      get_url:
+        url: "https://mirror.stream.centos.org/9-stream/AppStream/x86_64/os/Packages/wget-1.21.1-8.el9.x86_64.rpm"
+        dest: "/tmp/wget-1.21.1-8.el9.x86_64.rpm"
 
-       - name: Install the package
-         yum:
-           name: "/tmp/wget-1.21.1-8.el9.x86_64.rpm"
-           state: present
+    - name: Install the package
+      yum:
+        name: "/tmp/wget-1.21.1-8.el9.x86_64.rpm"
+        state: present
 
-       - name: Remove the package file
-         file:
-           path: "/tmp/wget-1.21.1-8.el9.x86_64.rpm"
-           state: absent
+    - name: Remove the package file
+      file:
+        path: "/tmp/wget-1.21.1-8.el9.x86_64.rpm"
+        state: absent
 ```  
 
 3. Instalar el paquete unzip-5.52 en web1.
@@ -582,17 +578,15 @@ NOTA: Asegurarse de tener instalada la colección `community.general` en tu ento
         src: /home/thor/playbooks/local.zip
         dest: /tmp/
         remote_src: no
-
 ```
 
-    Para descomprimir usamos el módulo `ansible.builtin.unarchive`
+  Para descomprimir usamos el módulo `ansible.builtin.unarchive`
 
+   * **src**: Ruta del fichero que deseamos descomprimir.
 
-    * **src**: Ruta del fichero que deseamos descomprimir.
+   * **dest**: Directorio de destino donde se descomprimirá el contenido del archivo.
 
-    * **dest**: Directorio de destino donde se descomprimirá el contenido del archivo.
-
-    * **remote_src**: Indica si el archivo fuente está en el host remoto (yes) o en el controlador local (no).
+   * **remote_src**: Indica si el archivo fuente está en el host remoto (yes) o en el controlador local (no).
 
 3. En el nodo web1 tenemos un archivo data.tar.gz bajo el directorio /root, extraerlo en /srv 
 Asegurarse de que el archivo data.tar.gz es eliminado después de eso.
@@ -704,16 +698,16 @@ Los siguientes ejemplos, muestran  cómo utilizar Ansible para gestionar tareas 
     Puede utilizar el comando `echo «» > /var/log/lastlog` para vaciar el archivo lastlog y el horario debe ser `0 0 * * *`.
 
 ```yaml
-  ---
-  - name: Add a cron job to clear lastlog
-    hosts: node00
-    tasks:
-      - name: Ensure the cron job is present
-        cron:
-          name: "Clear Lastlog"
-          minute: "0"
-          hour: "0"
-          job: 'echo "" > /var/log/lastlog'
+---
+- name: Add a cron job to clear lastlog
+  hosts: node00
+  tasks:
+    - name: Ensure the cron job is present
+      cron:
+        name: "Clear Lastlog"
+        minute: "0"
+        hour: "0"
+        job: 'echo "" > /var/log/lastlog'
 ```
 
 2. Tenemos un script /root/free.sh en node00 que se utiliza para comprobar la memoria libre del sistema.Nos gustaría crear un cron Free Memory Check para ejecutar este script cada 2 horas (es decir, 12am, 2am, 4am etc), el comando para ejecutar el script es sh /root/free.sh y el horario debe ser 0 */2 * * *.
