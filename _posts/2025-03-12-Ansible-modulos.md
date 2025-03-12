@@ -648,11 +648,11 @@ Asegurarse de que el archivo data.tar.gz es eliminado después de eso.
 
 6 - Queremos configurar nginx en el nodo web1 con algún código html de ejemplo.  A continuación se presentan los detalles acerca de la tarea:
 
-    A.  Instalar el paquete nginx e iniciar/activar su servicio.
+* Instalar el paquete nginx e iniciar/activar su servicio.
 
-    B.  Extrae el archivo /root/nginx.zip del directorio /usr/share/nginx/html.
+* Extrae el archivo /root/nginx.zip del directorio /usr/share/nginx/html.
 
-    C.  Dentro de /usr/share/nginx/html/index.html sustituye la línea This is sample html code por la línea This is KodeKloud Ansible lab.
+* Dentro de /usr/share/nginx/html/index.html sustituye la línea This is sample html code por la línea This is KodeKloud Ansible lab.
 
 
 ```yaml
@@ -695,7 +695,7 @@ Los siguientes ejemplos, muestran  cómo utilizar Ansible para gestionar tareas 
 
 1 - Cree un playbook ~/playbooks/lastlog.yml para añadir una tarea cron Clear Lastlog en node00 para vaciar el archivo de registros /var/log/lastlog. La tarea debe ejecutarse todos los días a las 12 de la mañana.
 
-    Puede utilizar el comando `echo «» > /var/log/lastlog` para vaciar el archivo lastlog y el horario debe ser `0 0 * * *`.
+Puede utilizar el comando `echo «» > /var/log/lastlog` para vaciar el archivo lastlog y el horario debe ser `0 0 * * *`.
 
 ```yaml
 ---
@@ -712,7 +712,7 @@ Los siguientes ejemplos, muestran  cómo utilizar Ansible para gestionar tareas 
 
 2 - Tenemos un script /root/free.sh en node00 que se utiliza para comprobar la memoria libre del sistema.Nos gustaría crear un cron Free Memory Check para ejecutar este script cada 2 horas (es decir, 12am, 2am, 4am etc), el comando para ejecutar el script es sh /root/free.sh y el horario debe ser 0 */2 * * *.
 
-    Puede crear un playbook ~/playbooks/script_cron.yml para esto.
+Puede crear un playbook ~/playbooks/script_cron.yml para esto.
 
 ```yaml
 ---
@@ -746,7 +746,7 @@ Ese trabajo estaba configurado para ejecutarse cada 1 hora. Sin embargo, como ah
 4 - Debido a algunas limitaciones de espacio en disco, queremos limpiar la ubicación /tmp en el nodo00 después de cada reinicio.
 Cree un playbook ~/playbooks/reboot.yml para añadir un cron llamado cleanup en node00 que se ejecutará después de cada reinicio y limpiará la ubicación /tmp.
 
-    El comando debe ser `rm -rf /tmp/*`.
+El comando debe ser `rm -rf /tmp/*`.
 
 ```yaml
 ---
