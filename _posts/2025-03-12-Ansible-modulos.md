@@ -400,18 +400,33 @@ En los ejemplos siguientes vamos a ver como administrar tanto firewalld cómo UF
 
     ```yaml
     ---
-    - name: Allow ports 22, 80, and 443 in firewall
-      ufw:
-        rule: allow
-        port: [22,80,443]
+    - name: Configure firewall rules
+      hosts: localhost
+      become: yes
+      tasks:
+        - name: Allow port 22
+          ufw:
+            rule: allow
+            port: 22
 
-    - name: Verify firewall rules
-      command: ufw status
-      register: firewall_status
+        - name: Allow port 80
+          ufw:
+            rule: allow
+            port: 80
 
-    - name: Display firewall status
-      debug:
-        var: firewall_status.stdout_lines
+        - name: Allow port 443
+          ufw:
+            rule: allow
+            port: 443
+
+        - name: Verify firewall rules
+          command: ufw status
+          register: firewall_status
+
+        - name: Display firewall status
+          debug:
+            var: firewall_status.stdout_lines
+
     ```
 
 ## Contenido de archivo
