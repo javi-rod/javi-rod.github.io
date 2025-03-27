@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Terraform - Instalación
-date: 2027-03-27 00:00
+date: 2025-03-27 00:00
 share: true
 categories: [Terraform,IaC (Infrastructure as Code)]
 tags: 
