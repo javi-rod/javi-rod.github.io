@@ -47,7 +47,8 @@ Como vemos, en este caso, no reconoce el comando *lsb_release* porque no tenemos
 
 <img src="https://javi-rod.github.io/assets/images/20250327/07_actualizar_instalar.png" alt="Actualizar los paquetes del repositorio e instalar Terraform" width="600" />
 
-**Nota**: Ten en cuenta que si no eres el usuario root, deberás usar sudo antes de cada comando que requiera privilegios de administrador. En mi caso se podía omitir, al usar el usuario root.
+> 📌 Nota
+> Ten en cuenta que si no eres el usuario root, deberás usar sudo antes de cada comando que requiera privilegios de administrador. En mi caso se podía omitir, al usar el usuario root.
 
 Estos son los comandos que se han ejecutado por orden:
 
