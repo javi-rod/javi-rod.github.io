@@ -70,8 +70,8 @@ Relacionado con el tema de los providers, tenemos el comando `terraform init`. E
 
 * **Preparación del Backend**: Configura el almacenamiento remoto (si se ha especificado) para mantener el estado de tu infraestructura, lo cual es esencial para la colaboración y el trabajo con equipos.
 
-> [!NOTE]
-> El comando terraform init solo necesita ejecutarse una vez al principio o cuando se añaden nuevos proveedores o cambios en el backend. Esto evita que los lectores piensen que es algo que deben ejecutar constantemente.
+> 📌 Nota   
+> El comando terraform init solo necesita ejecutarse una vez al principio o cuando se añaden nuevos proveedores o cambios en el backend.
 
 Aquí vemos un ejemplo de ejecución de terraform init
 
