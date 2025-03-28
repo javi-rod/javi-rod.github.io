@@ -85,7 +85,7 @@ Veamos lo que significa cada parte:
 
 2. **Initializing provider plugins...** 
 
-    Terraform está buscando el proveedor que hemoss especificado en el archivo de configuración (main.tf). En este caso, está buscando la versión 1.13.3 del proveedor linode/linode, que es un proveedor para interactuar con la API de Linode.
+    Terraform está buscando el proveedor que hemos especificado en el archivo de configuración (main.tf). En este caso, está buscando la versión 1.13.3 del proveedor linode/linode, que es un proveedor para interactuar con la API de Linode.
 
 
 3. **Finding linode/linode versions matching "1.13.3"...** 
