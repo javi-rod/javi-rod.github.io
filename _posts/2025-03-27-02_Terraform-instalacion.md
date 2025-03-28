@@ -39,7 +39,7 @@ Como vemos, en este caso, no reconoce el comando *lsb_release* porque no tenemos
 
 <img src="https://javi-rod.github.io/assets/images/20250327/05_update_packages.png" alt="Actualizar paquetes e instalar paquete lsb-release" width="600" />
 
-4 - Con el paquete *lsb-release* instalado, podemos añadir, de nuevo. el repositorio de hashicorp
+4 - Con el paquete *lsb-release* instalado, podemos añadir nuevamente el repositorio de hashicorp
 
 <img src="https://javi-rod.github.io/assets/images/20250327/06_anadir_repo.png" alt="Añadir repo al listado de repositorios" width="600" />
 
@@ -47,7 +47,7 @@ Como vemos, en este caso, no reconoce el comando *lsb_release* porque no tenemos
 
 <img src="https://javi-rod.github.io/assets/images/20250327/07_actualizar_instalar.png" alt="Actualizar los paquetes del repositorio e instalar Terraform" width="600" />
 
-**Nota**: Ten en cuenta que si no eres el usuario root, deberás usar sudo antes de cada comando que requiera privilegios de administrador. En mi caso se podía omitir al usar el usuario root.
+**Nota**: Ten en cuenta que si no eres el usuario root, deberás usar sudo antes de cada comando que requiera privilegios de administrador. En mi caso se podía omitir, al usar el usuario root.
 
 Estos son los comandos que se han ejecutado por orden:
 
