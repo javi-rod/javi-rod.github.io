@@ -15,22 +15,22 @@ Los **meta-argumentos** son opciones especiales que permiten controlar el compor
 
 ## Meta-argumentos comunes en Terraform
 
-1. `depends_on`
+1. **depends_on**
 
-2. `count`
+2. **count**
 
-3. `for_each`
+3. **for_each**
 
-4. `lifecycle`
+4. **lifecycle**
 
-5. `provider`
+5. **provider**
 
-6. `module`
+6. **module**
 
 
-## 1. `depends_on`
+## 1. **depends_on**
 
-El meta-argumento `**depends_on**` se utiliza para **establecer dependencias explícitas** entre **recursos**, **módulos** u otros elementos. Si tenemos un recurso que depende de otro, podemos usar `depends_on` para asegurarnos de que un recurso se cree o se destruya en el orden correcto.
+El meta-argumento `depends_on` se utiliza para **establecer dependencias explícitas** entre **recursos**, **módulos** u otros elementos. Si tenemos un recurso que depende de otro, podemos usar `depends_on` para asegurarnos de que un recurso se cree o se destruya en el orden correcto.
 
 ### Ejemplo:
 
@@ -58,9 +58,9 @@ resource "aws_instance" "example" {
 
 En este ejemplo, `depends_on` garantiza que la **instancia EC2** no se cree hasta que el **grupo de seguridad** esté completamente creado.
 
-## 2. `count`
+## 2. **count**
 
-El meta-argumento **`count`** permite **crear múltiples instancias de un recurso** basado en un **valor de contador**. Es **útil** cuando para crear una cantidad dinámica de **recursos** de un **tipo específico**.
+El meta-argumento `count` permite **crear múltiples instancias de un recurso** basado en un **valor de contador**. Es **útil** cuando para crear una cantidad dinámica de **recursos** de un **tipo específico**.
 
 ### Ejemplo:
 
@@ -79,15 +79,15 @@ output "instance_ids" {
 ```
 En este ejemplo, Terraform creará tres **instancias EC2** con el mismo bloque de configuración. La referencia `aws_instance.example[*].id` devuelve una lista de los **IDs** de todas las instancias.
 
-## 3. `for_each`
+## 3. **for_each**
 
-El meta-argumento **`for_each`** es similar a `count`, pero permite **iterar** sobre un conjunto de valores (como un mapa o una lista). Usar `for_each` es **más flexible** que `count` porque podemos crear recursos con diferentes configuraciones o identificadores.
+El meta-argumento `for_each` es similar a `count`, pero permite **iterar** sobre un conjunto de valores (como un mapa o una lista). Usar `for_each` es **más flexible** que `count` porque podemos crear recursos con diferentes configuraciones o identificadores.
 
 ### Ejemplo:
 
 Crear varias instancias EC2, pero con configuraciones diferentes (como diferentes tipos de instancias o AMIs), usando `for_each`:
 
-```hcl
+```
 resource "aws_instance" "example" {
   for_each      = {
     "instance_1" = { ami = "ami-12345678", instance_type = "t2.micro" },
@@ -99,16 +99,18 @@ resource "aws_instance" "example" {
 }
 
 output "instance_ids" {
-  value = aws_instance.example[*].id  # Muestra los IDs de las instancias creadas
+  value = [for instance in aws_instance.example : instance.id]  # Usando una expresión for para obtener los IDs
 }
 ```
 
-En este ejemplo, Terraform creará dos **instancias EC2**, una con tipo `t2.micro` y otra con `t2.medium`. `for_each` permite trabajar con mapas o listas y crear recursos con diferentes configuraciones, a diferencia de `count`, que es adecuado cuando los recursos son exactamente iguales.
+- En el recurso `aws_instance` estamos utilizando `for_each` para crear dos instancias con diferentes parámetros.
+
+- El output usa una expresión for que recorre todas las instancias creadas por `aws_instance.example` y extrae sus IDs. 
 
 
-## 4. `lifecycle`
+## 4. **lifecycle**
 
-El meta-argumento **`lifecycle`** se usa para **controlar el comportamiento de creación, actualización y destrucción de los recursos**. Ya hablamos de las reglas del ciclo de vida anteriormente, pero lo recordaremos por qué `lifecycle` es un meta-argumento que podemos usar para alterar el comportamiento de un recurso.
+El meta-argumento `lifecycle` se usa para **controlar el comportamiento de creación, actualización y destrucción de los recursos**. Ya hablamos de las reglas del ciclo de vida anteriormente, pero lo recordaremos por qué `lifecycle` es un meta-argumento que podemos usar para alterar el comportamiento de un recurso.
 
 Las **reglas de ciclo de vida** incluyen:
 
@@ -135,9 +137,9 @@ resource "aws_instance" "example" {
 
 En este ejemplo, `prevent_destroy` garantiza que el recurso no será destruido, incluso si intentas ejecutar `terraform destroy` o si el recurso se elimina de la configuración.Si intentamos destruir esta instancia, Terraform devolverá un error indicando que el recurso no puede ser destruido debido a la regla `prevent_destroy`.`
 
-## 5. `provider`
+## 5. **provider**
 
-El meta-argumento **`provider`**, del cual ya hablamos en el post de providers, se utiliza para **especificar** qué proveedor utilizar dentro de un recurso o módulo. Podemos usar provider para crear recursos en diferentes regiones o en diferentes cuentas de un mismo proveedor.
+El meta-argumento `provider`, del cual ya hablamos en el post de providers, se utiliza para **especificar** qué proveedor utilizar dentro de un recurso o módulo. Podemos usar provider para crear recursos en diferentes regiones o en diferentes cuentas de un mismo proveedor.
 
 ### Ejemplo:
 
@@ -154,9 +156,9 @@ resource "aws_instance" "example" {
 ```
 En este caso, el recurso `aws_instance` usa el **proveedor** `aws.us_east_1`, que está configurado para la **región** `us-east-1`.
 
-## 6. `module`
+## 6. **module**
 
-El meta-argumento **`module`** se usa para **incluir módulos** dentro de nuestra configuración. Los **módulos** son fragmentos reutilizables de código que podemos llamar desde diferentes partes de tu infraestructura.
+El meta-argumento `module` se usa para **incluir módulos** dentro de nuestra configuración. Los **módulos** son fragmentos reutilizables de código que podemos llamar desde diferentes partes de tu infraestructura.
 
 ### Ejemplo:
 

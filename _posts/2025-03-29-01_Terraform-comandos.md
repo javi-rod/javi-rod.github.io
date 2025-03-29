@@ -52,7 +52,7 @@ Usar `-auto-approve` omite la solicitud de confirmación, lo que puede ser **un 
 
 <img src="https://javi-rod.github.io/assets/images/20250329/05_terraform_apply_01.png" alt="Ejemplo comando terraform apply" />
 
-<img src="https://javi-rod.github.io/20250329/06_terraform_apply_02.png" alt="Ejemplo comando terraform apply que da error" />
+<img src="https://javi-rod.github.io/assets/images/20250329/06_terraform_apply_02.png" alt="Ejemplo comando terraform apply que da error" />
 
 ¡El comando `terraform apply` falló a pesar de que nuestra validación funcionó! Esto se debe a que el comando `terraform validate` **solo realiza una verificación general** de la configuración. **Valida el bloque de recursos y la sintaxis** de los argumentos, pero **no los valores que los argumentos esperan** para un recurso específico.
 
