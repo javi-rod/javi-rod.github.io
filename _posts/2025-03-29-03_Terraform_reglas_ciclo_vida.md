@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Terraform - Infraestructura mutable e inmutable
+title: Terraform - Reglas ciclo de vida
 date: 2025-03-29 00:00
 share: true
 categories: [Terraform,IaC (Infrastructure as Code)]
