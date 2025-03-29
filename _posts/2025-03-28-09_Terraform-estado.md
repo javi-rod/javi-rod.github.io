@@ -1,4 +1,15 @@
-El estado en Terraform es un archivo que contiene la información sobre los recursos que han sido creados, modificados o eliminados en nuestra infraestructura. Este archivo permite a Terraform realizar un seguimiento de los cambios que necesita aplicar para que la infraestructura se ajuste a la configuración declarada en los archivos .tf.
+---
+layout: post
+title: Terraform - Estado
+date: 2025-03-29 00:00
+share: true
+categories: [Terraform,IaC (Infrastructure as Code)]
+tags: 
+- Terraform
+- IaC (Infrastructure as Code)
+---
+
+El **estado** en Terraform es un archivo que contiene la información sobre los recursos que han sido creados, modificados o eliminados en nuestra infraestructura. Este archivo permite a Terraform realizar un seguimiento de los cambios que necesita aplicar para que la infraestructura se ajuste a la configuración declarada en los archivos .tf.
 
 El estado sirve como una base para:
 
