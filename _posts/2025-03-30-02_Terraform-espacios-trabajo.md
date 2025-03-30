@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Terraform - Espacios de trabajo (workspaces)
-date: 2025-03-29 00:00
+date: 2025-03-30 00:00
 share: true
 categories: [Terraform,IaC (Infrastructure as Code)]
 tags: 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Terraform - Funciones
-date: 2025-03-29 00:00
+date: 2025-03-30 00:00
 share: true
 categories: [Terraform,IaC (Infrastructure as Code)]
 tags: 
