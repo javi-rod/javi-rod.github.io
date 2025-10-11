@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Write-Up - Pickle Rick [THM]
+title: "Write-Up: Pickle Rick [THM]"
 date: 2025-10-11 00:00
 share: true
 categories: [THM,CTF,writeup]
