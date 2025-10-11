@@ -105,9 +105,12 @@ Como vemos, accedemos al portal donde vemos una serie de pestañas.
 
 <img src="https://javi-rod.github.io/assets/images/20251011/08_COMMANDS.png" alt="Portal de login." />
 
-Si intentamos acceder a cualquiera de las otras pestañas, veremos lo siguiente (*Viendo el código fuente todas ellas apuntan al mismo lugar*)
+Si intentamos acceder a cualquiera de las otras pestañas (Potions, Creatures...), veremos lo siguiente 
 
 <img src="https://javi-rod.github.io/assets/images/20251011/09_POTIONS.png" alt="Portal de login." />
+
+(*Viendo el código fuente todas ellas apuntan al mismo lugar*)
+
 
 # Paso 4: Localización de flags / Exploración
 
