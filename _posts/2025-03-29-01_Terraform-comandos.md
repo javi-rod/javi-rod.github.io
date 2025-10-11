@@ -3,7 +3,7 @@ layout: post
 title: Terraform - Comandos
 date: 2025-03-29 00:00
 share: true
-categories: [Terraform,IaC (Infrastructure as Code)]
+categories: [Terraform,IaC (Infrastructure as Code),devops]
 tags: 
 - Terraform
 - IaC (Infrastructure as Code)

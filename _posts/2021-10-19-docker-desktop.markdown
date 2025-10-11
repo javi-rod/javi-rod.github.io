@@ -3,7 +3,7 @@ layout: post
 title:  "Docker Desktop"
 date:   2021-10-19 09:30
 share: true
-categories: [Virtualización,Docker]
+categories: [devops,containers,docker,infraestructura]
 tags: Docker
 ---
 
